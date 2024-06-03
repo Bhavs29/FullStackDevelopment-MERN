@@ -209,7 +209,7 @@
                     <input type="number" name="age" id="age"> <br>
                     <br>
                     <label for="Email">Email:</label>
-                    <input type="email" name="email" id="email" required> <br>
+                    <input type="email" name="email" id="email"  placeholder="name@gmail.com"> <br>
                     <br>
                     <label for="telephone">contact no</label>
                     <input type="number" name="tel" id="tel"> <br>
@@ -255,27 +255,53 @@
                     <hr>
 
                     <label for="flowers">Choose flowers</label>
-                    <select name="flowers" id="flowers">
+                    <select name="flowers" id="flowers"><br>
                      <option value="Sun flowers">Sun flowers </option>
                      <option value="Rose">Rose flowers </option>  
                      <option value="Lilly">Lilly flowers </option>
-                     <option value="Lotous">Lotous flowers </option>    
-                    </select>
+                     <option value="Lotous">Lotous flowers </option> <br>    
+                    </select><br>
+                    </form>
+                    
+                </hr>
                     <fieldset>
                         <legend>Details</legend>
                         <label for="fname">First name:</label><br>
-                        <input type 
+                        <input type="text" id="fname" name="fname" size="50"><br>
+                        <label for="pin">PIN</label><br>
+                        <input type="text" id="pin" name="pin" size="4"><br>
+
+                        <hr>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" size="50"><br>
+                        <label for="pin">PIN</label><br>
+                        <input type="text" id="pin" name="pin" minlength="4" maxlength="4" size="4"><br>
+                    
                     </fieldset>
+                    <h2>Min and Max Range</h2>
+                    <label for="datemax">Enter a Date Before 1980-01-01</label><br>
+                    <input type="date" id="datemax" name="datemax"  max="1979-12-31"><br><br>
+
+                    <label for="datemin">Enter a Date After  2000-01-01</label><br>
+                    <input type="date" id="datemin" name="datemin"  min="2000-01-02"><br><br>
+
+                    
+                    <label for="quantity">Quantity (between 1 and 5):</label><br>
+                    <input type="number" id="quantity" name="quantity"  min="1" max="5" ><br><br
+                </hr>
+                    <h2>Phone number</h2>
+                    <label for="phone">PhoneNumber:</label>
+                    <input type="text"  id="phone" name="phone"
+                     pattern="[0-9]{10}" title="Enter 10 numbers only" required>
+                     
 
 
 
 
 
 
-
-
-                 </form>
-
+               </addres>                 
+                </form>
 
 </body>
 </html>
